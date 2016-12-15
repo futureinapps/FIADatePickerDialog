@@ -20,6 +20,20 @@
                ReferencedContainer = "container:FIADatePickerDialog.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F4F9A671E017C52002BEAB8"
+               BuildableName = "FIADatePickerDialogTests.xctest"
+               BlueprintName = "FIADatePickerDialogTests"
+               ReferencedContainer = "container:FIADatePickerDialog.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

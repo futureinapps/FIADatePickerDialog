@@ -241,6 +241,7 @@
 					7F257E7D1E01EA1C00BE62BB = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = H8JUP89MG7;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					7F4F9A5E1E017C52002BEAB8 = {
