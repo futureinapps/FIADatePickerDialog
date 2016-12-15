@@ -35,6 +35,15 @@ extension UIButton {
         }
     }
     
+    private var defaultBGRColor:UIColor?{
+        set{
+            objc_setAssociatedObject(self, &rawPointer_Bool, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        }
+        get{
+            return objc_getAssociatedObject(self, &rawPointer_Bool) as? UIColor
+        }
+    }
+    
     func submit(_ sender:UIButton!){
         guard delegate != nil else {
             fatalError("DatePickerDialogActions delegate should not be nil")
@@ -51,14 +60,14 @@ extension UIButton {
     
     open override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         if isDatePickerAction != nil && isDatePickerAction! {
-            backgroundColor = UIColor.lightGray
+            backgroundColor = UIColor.hexStringToUIColor(hex: "222222",alpha:0.3)
         }
         return true
     }
     
     open override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
         if isDatePickerAction != nil && isDatePickerAction! {
-            backgroundColor = UIColor.darkGray
+            backgroundColor = UIColor.clear
         }
     }
 }
