@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FIADatePickerDialogExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaB-qY-Mxp">
+                                <rect key="frame" x="65" y="323" width="294" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qdp-X1-HZc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOP-sQ-96Q">
+                                <rect key="frame" x="16" y="323" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-Iz-bD8">
+                                <rect key="frame" x="143" y="352" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="OTx-hd-8e2"/>
+                                    <constraint firstAttribute="height" constant="30" id="moH-c0-6GQ"/>
+                                </constraints>
+                                <state key="normal" title="Choose Date"/>
+                                <connections>
+                                    <action selector="chooseDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTZ-MT-N6a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJt-cc-1fT">
+                                <rect key="frame" x="143" y="390" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="9ls-7r-uOg"/>
+                                    <constraint firstAttribute="height" constant="30" id="Y7f-J8-tem"/>
+                                </constraints>
+                                <state key="normal" title="Clear Date"/>
+                                <connections>
+                                    <action selector="clearDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3hW-ef-xlj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lOP-sQ-96Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="4Yh-hb-tsr"/>
+                            <constraint firstItem="gJt-cc-1fT" firstAttribute="top" secondItem="bO1-Iz-bD8" secondAttribute="bottom" constant="8" id="Khp-KO-i45"/>
+                            <constraint firstItem="bO1-Iz-bD8" firstAttribute="top" secondItem="ZaB-qY-Mxp" secondAttribute="bottom" constant="8" id="Ncj-S8-WTk"/>
+                            <constraint firstItem="ZaB-qY-Mxp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bMl-xV-ukH"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaB-qY-Mxp" secondAttribute="trailing" constant="16" id="c2e-9q-MfV"/>
+                            <constraint firstItem="ZaB-qY-Mxp" firstAttribute="leading" secondItem="lOP-sQ-96Q" secondAttribute="trailing" constant="8" id="c7r-su-Ugh"/>
+                            <constraint firstItem="lOP-sQ-96Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iI5-z2-nYi"/>
+                            <constraint firstItem="gJt-cc-1fT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uNw-XT-Cla"/>
+                            <constraint firstItem="bO1-Iz-bD8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xOn-4p-wmO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="ZaB-qY-Mxp" id="mcD-Xo-X97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>
